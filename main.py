@@ -2,15 +2,15 @@ from calc_operations import *
 from calc_utils import *
 
 while True:
-    show_welcome()  # ДОБАВЬТЕ ЭТУ СТРОКУ
+    show_welcome()
     show_menu()
     choice = input("Выберите действие: ")
     
-    if choice == "5":
+    if choice == "6":  # ИЗМЕНИТЕ С 5 НА 6
         print("Пока!")
         break
     
-    if choice in ["1", "2", "3", "4"]:
+    if choice in ["1", "2", "3", "4", "5"]:  # ДОБАВЬТЕ "5"
         a = get_number("Первое число: ")
         b = get_number("Второе число: ")
         
@@ -29,5 +29,8 @@ while True:
             else:
                 result = divide(a, b)
                 print(f"Результат: {a} / {b} = {result}")
+        elif choice == "5":  # ДОБАВЬТЕ ЭТОТ БЛОК
+            result = power(a, b)
+            print(f"Результат: {a} ^ {b} = {result}")
     else:
         print("Неверный выбор!")
