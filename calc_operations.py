@@ -10,5 +10,10 @@ def multiply(a, b):
 def divide(a, b):
     return a / b
 
+print("Модуль операций загружен")
+
+def power(a, b):
+    return a ** b
+
 def modulo(a, b):
     return a % b
