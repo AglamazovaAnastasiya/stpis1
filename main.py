@@ -2,6 +2,7 @@ from calc_operations import *
 from calc_utils import *
 
 while True:
+    show_welcome()  # ДОБАВЬТЕ ЭТУ СТРОКУ
     show_menu()
     choice = input("Выберите действие: ")
     
