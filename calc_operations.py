@@ -1,3 +1,5 @@
+print("Модуль операций загружен")
+
 def add(a, b):
     return a + b
 
