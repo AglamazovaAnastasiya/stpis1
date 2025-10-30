@@ -2,6 +2,7 @@ from calc_operations import *
 from calc_utils import *
 from history import *  # ДОБАВЬТЕ ЭТОТ ИМПОРТ
 
+print("Калькулятор версия 1.1")
 while True:
     show_welcome()
     show_menu()
