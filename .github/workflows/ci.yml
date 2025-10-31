@@ -1,0 +1,19 @@
+name: Calculator CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    - name: Test Calculator
+      run: |
+        python -c "print('🚀 CI started')"
+        python -c "from calc_operations import add; print('2 + 3 =', add(2, 3))"
+        python -c "from calc_utils import show_menu; show_menu()"
+        echo "✅ Calculator CI passed!"
